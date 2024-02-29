@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const Response = require('./Response');
+const Reaction = require('./Reaction');
 
 // Schema to create Post model
 const thoughtSchema = new Schema(
@@ -36,6 +36,6 @@ return this.reactions.length;
 });
 
 // Initialize our Video model
-const Video = model('video', videoSchema);
+const Thought = model('thought', thoughtSchema);
 
-module.exports = Video;
+module.exports = Thought;
