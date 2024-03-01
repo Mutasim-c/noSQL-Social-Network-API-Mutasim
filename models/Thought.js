@@ -28,7 +28,7 @@ const thoughtSchema = new Schema(
   }
 );
 
-videoSchema
+thoughtSchema
 .virtual('reactionCount')
 // Getter
 .get(function () {
